@@ -1,0 +1,31 @@
+'new line' >> INFO.md
+echo 'Hello, Friend! How are you?' > README.md
+
+git status
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified:   INFO.md
+    modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+git diff
+
+diff --git a/INFO.md b/INFO.md
+index d5225f8..40f51f1 100644
+--- a/INFO.md
++++ b/INFO.md
+@@ -1 +1,2 @@
+
+ git is awesome!
++new line
+
+diff --git a/README.md b/README.md
+index ffe7ece..00fd294 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1 @@
+
+-Hello, my dear Friend!!
++Hello, Friend! How are you?

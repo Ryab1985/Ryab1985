@@ -1,11 +1,11 @@
 git status
 
 On branch main
-Your branch is up to date with 'origin/main'.
+Your branch is up to date with 'main'.
 
 Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "git add to update what will be committed)
+  (use "git restore   to discard changes in working directory)
     deleted:    PEOPLE.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
@@ -13,7 +13,7 @@ git restore PEOPLE.md
 git status
 
 On branch main
-Your branch is up to date with 'origin/main'.
+Your branch is up to date with 'main'.
 
 nothing to commit, working tree clean
 ~/hexlet-git$                                                                                                                     
@@ -27,11 +27,10 @@ drwxr-xr-x 8 hex hex 4096 24 декабря 11:43
 ~/hexlet-git
 ~/hexlet-статус git
 в основной ветке 
-Изменения, не подготовленные для фиксации: 
- (используйте "git add/rm <файл>...", чтобы обновить то, что будет зафиксировано) 
- (используйте "git restore <файл>...", чтобы отменить изменения в рабочем каталоге) 
+
+ git add
+ git restore  
                                                                                                                                   
-                                                                                                                                  
-никаких изменений для фиксации добавлено не было (используйте "git add" и / или "git commit -a") 
+ 
 ~/hexlet-git
 ~/hexlet-git

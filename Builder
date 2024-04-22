@@ -1,0 +1,16 @@
+$configBuilder = new WebAppConfigBuilder();
+$webAppConfig = $configBuilder
+    ->setEnvironment('production')
+    ->setDatabaseConfig(['host' => 'localhost', 'username' => 'root', 'password' => 'secret'])
+    ->setCacheEnabled(true)
+    ->build();
+print_r($webAppConfig->configInfo());
+
+[
+    'environment' => 'production',
+    'db' => [
+    'host' => 'localhost',
+        'username' => 'root',
+        'password' => 'secret',
+    ],
+    'enabledCache' => true

@@ -1,0 +1,10 @@
+$cacheManager1 = CacheManager::getInstance();
+$cacheManager1->set('user:1', ['name' => 'John', 'age' => 30]);
+
+$cacheManager2 = CacheManager::getInstance();
+$userData = $cacheManager2->get('user:1');
+var_dump($userData); // Должно вывести данные пользователя
+
+$cacheManager1->delete('user:1'); // 
+
+$cacheManager2->clear(); // 

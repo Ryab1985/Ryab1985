@@ -1,0 +1,27 @@
+class PayPalPaymentGateway {
+    public function processPayment(float $amount) {
+        // Логика обработки платежа через PayPal
+        echo "Платеж на сумму $amount руб. с помощью PayPal успешно проведен.\n";
+    }
+}
+
+Также у вас есть класс StripePaymentGateway
+
+PHP
+
+class StripePaymentGateway {
+    public function makePayment(float $amount)   
+    {
+        //  Stripe
+        echo "Платеж на сумму $amount руб. 
+}
+ PaymentGatewayAdapter
+
+PHP
+
+$paypalGateway = new PayPalPaymentGateway();
+$paypalAdapter = new PayPalAdapter($paypalGateway);
+$paypalAdapter->process(100.00); // 
+$stripeGateway = new StripePaymentGateway();
+$stripeAdapter = new StripeAdapter($stripeGateway);
+$stripeAdapter->process(150.00); // 

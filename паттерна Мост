@@ -1,0 +1,8 @@
+$emailSender = new EmailNotificationSender();
+$smsSender = new SMSNotificationSender();
+
+$simpleEmailNotification = new SimpleNotification($emailSender);
+$simpleEmailNotification->send();
+
+$errorSMSNotification = new ErrorNotification($smsSender);
+$errorSMSNotification->send();
